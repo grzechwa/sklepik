@@ -1,28 +1,26 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2015-06-04 21:05:51
-         compiled from "C:\xampp\htdocs\sklepik\app\security\LoginView.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:149555568b636c301d7-64214257%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.17, created on 2015-06-05 00:58:45
+         compiled from "/home/greg/www_pv/sklepik/app/security/LoginView.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:1066985045570d825782406-50884866%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '6f4c633bbdfef0f7db63b0d80222b040f0b9c11f' => 
+    'ab6c442414310bab213b4aa6d8467d91af1a6bb0' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\sklepik\\app\\security\\LoginView.tpl',
+      0 => '/home/greg/www_pv/sklepik/app/security/LoginView.tpl',
       1 => 1433369629,
       2 => 'file',
     ),
-    '6b6c826dffe74d999e542a1a55d0781143d8ec7d' => 
+    'a595b79be1e3062bf54653a5e3a2ee5094d9a1e5' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\sklepik\\templates\\main.tpl',
+      0 => '/home/greg/www_pv/sklepik/templates/main.tpl',
       1 => 1433444677,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '149555568b636c301d7-64214257',
+  'nocache_hash' => '1066985045570d825782406-50884866',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_5568b636d31f17_38060421',
   'variables' => 
   array (
     'conf' => 0,
@@ -32,8 +30,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'isLogged' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_5570d8258234d4_37816540',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5568b636d31f17_38060421')) {function content_5568b636d31f17_38060421($_smarty_tpl) {?><!doctype html>
+<?php if ($_valid && !is_callable('content_5570d8258234d4_37816540')) {function content_5570d8258234d4_37816540($_smarty_tpl) {?><!doctype html>
 <html lang="pl">
 <head>
     <meta charset="utf-8">

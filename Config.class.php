@@ -7,10 +7,10 @@ class Config{
 	public $app_url; 
 	public $action_root;
 	public $action_url;
-        public $db_url;
-        public $db_name;
-        public $db_username;
-        public $db_password;
+	public $db_url;
+	public $db_name;
+	public $db_username;
+	public $db_password;
 
 }
 ?>

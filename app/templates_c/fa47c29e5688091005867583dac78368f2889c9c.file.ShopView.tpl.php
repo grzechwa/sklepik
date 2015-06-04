@@ -1,28 +1,26 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2015-06-04 21:05:51
-         compiled from "C:\xampp\htdocs\sklepik\app\security\LoginView.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:149555568b636c301d7-64214257%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.17, created on 2015-06-05 01:00:24
+         compiled from "/home/greg/www_pv/sklepik/app/shop/ShopView.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:954035525570d88815e863-55343442%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '6f4c633bbdfef0f7db63b0d80222b040f0b9c11f' => 
+    'fa47c29e5688091005867583dac78368f2889c9c' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\sklepik\\app\\security\\LoginView.tpl',
-      1 => 1433369629,
+      0 => '/home/greg/www_pv/sklepik/app/shop/ShopView.tpl',
+      1 => 1433444692,
       2 => 'file',
     ),
-    '6b6c826dffe74d999e542a1a55d0781143d8ec7d' => 
+    'a595b79be1e3062bf54653a5e3a2ee5094d9a1e5' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\sklepik\\templates\\main.tpl',
+      0 => '/home/greg/www_pv/sklepik/templates/main.tpl',
       1 => 1433444677,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '149555568b636c301d7-64214257',
+  'nocache_hash' => '954035525570d88815e863-55343442',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_5568b636d31f17_38060421',
   'variables' => 
   array (
     'conf' => 0,
@@ -32,8 +30,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'isLogged' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_5570d88821b2e3_44288148',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5568b636d31f17_38060421')) {function content_5568b636d31f17_38060421($_smarty_tpl) {?><!doctype html>
+<?php if ($_valid && !is_callable('content_5570d88821b2e3_44288148')) {function content_5570d88821b2e3_44288148($_smarty_tpl) {?><!doctype html>
 <html lang="pl">
 <head>
     <meta charset="utf-8">
@@ -139,66 +139,73 @@ doLogout">Wyloguj</a></li>
     <div id="app_content" class="content">
 
 
-    <h2 class="content-head is-center">Zaloguj się</h2>
-    <div class="l-box-lrg pure-u-1 pure-u-med-3-5">
-
-    
-    <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isError()) {?>
-            <h4>Wystąpiły błędy: </h4>
-            <ol class="err">
-            <?php  $_smarty_tpl->tpl_vars['err'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['err']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['msgs']->value->getErrors(); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['err']->key => $_smarty_tpl->tpl_vars['err']->value) {
-$_smarty_tpl->tpl_vars['err']->_loop = true;
-?>
-            <li><?php echo $_smarty_tpl->tpl_vars['err']->value;?>
-</li>
-            <?php } ?>
-            </ol>
-    <?php }?>
-
-    
-    <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isInfo()) {?>
-            <h4>Informacje: </h4>
-            <ol class="inf">
-            <?php  $_smarty_tpl->tpl_vars['inf'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['inf']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['msgs']->value->getInfos(); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['inf']->key => $_smarty_tpl->tpl_vars['inf']->value) {
-$_smarty_tpl->tpl_vars['inf']->_loop = true;
-?>
-            <li><?php echo $_smarty_tpl->tpl_vars['inf']->value;?>
-</li>
-            <?php } ?>
-            </ol>
-    <?php }?>
-    </div>
-    
-    
-<table width="40%" cellspacing="10" align="center">
-    <thead>
-        <tr>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td width="40%" valign="top">
-                <form class="pure-form pure-form-stacked" action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-doLogin" method="post">
-                    <fieldset>
-                        <label for="login">login</label>
-                        <input id="login" type="text" placeholder="Wprowadź login" name="login" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->login;?>
+<h2 class="content-head is-center">Zapraszamy na zakupy</h2>
+	
+<table width="30%">
+    <tr>
+        <td>
+            <form class="pure-form pure-form-stacked"    action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
+shopSearch" method="post">
+                <fieldset>
+                    <label for="name">Nazwa</label>
+                    <input id="name" type="text" placeholder="Wpisz nazwę.." name="name" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->name;?>
 ">
-                        <label for="password">hasło</label>
-                        <input id="password" type="password" placeholder="Wprowadź hasło" name="password" >
-                    </fieldset>
-                    <button type="submit" class="pure-button">Loguj</button>
-                </form>
-            </td>
-        </tr>
-    </tbody>
-</table>
+                    <label for="category">Kategoria</label>
+                    <select id="category" name="category" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->category;?>
+">
+                        <option value="-1">Wszystkie</option>
+                        <?php  $_smarty_tpl->tpl_vars['cat'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['cat']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['categories']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['cat']->key => $_smarty_tpl->tpl_vars['cat']->value) {
+$_smarty_tpl->tpl_vars['cat']->_loop = true;
+?>
+                        <option value=<?php echo $_smarty_tpl->tpl_vars['cat']->value['id_kategoria'];?>
+ <?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['cat']->value['id_kategoria'];?>
+<?php $_tmp1=ob_get_clean();?><?php if ($_smarty_tpl->tpl_vars['form']->value->category==$_tmp1) {?> selected<?php }?>><?php echo $_smarty_tpl->tpl_vars['cat']->value['nazwa'];?>
+</option>
+                        <?php } ?>
+                    </select>
+                    <button type="submit" class="pure-button">Szukaj</button>
+                </fieldset>
+            </form>
+        </td>
+    </tr>
 
+</table>
+<div>
+    
+<?php if ($_smarty_tpl->tpl_vars['products']->value->num_rows>0) {?>
+<table class="pure-table pure-table-horizontal" align="center">
+        <thead>
+            <tr>
+                <th>Nazwa</th>
+                <th>Opis</th>
+                <th>Cena</th>
+                <th>Kategoria</th>
+                <?php if ($_smarty_tpl->tpl_vars['isLogged']->value==true) {?>
+                <th></th>
+                <?php }?>
+            </tr>
+        </thead>
+        <tbody>
+            <?php  $_smarty_tpl->tpl_vars['prod'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['prod']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['products']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['prod']->key => $_smarty_tpl->tpl_vars['prod']->value) {
+$_smarty_tpl->tpl_vars['prod']->_loop = true;
+?>
+            <tr><td><?php echo $_smarty_tpl->tpl_vars['prod']->value['nazwaTowaru'];?>
+</td><td><?php echo $_smarty_tpl->tpl_vars['prod']->value['opisTowaru'];?>
+</td><td><?php echo $_smarty_tpl->tpl_vars['prod']->value['cenaTowaru'];?>
+</td><td><?php echo $_smarty_tpl->tpl_vars['prod']->value['kategoriaTowaru'];?>
+</td><?php if ($_smarty_tpl->tpl_vars['isLogged']->value=='isLogged') {?><td><button>zamów</button></td><?php }?></tr>
+            <?php } ?>
+        </tbody>
+    </table>
+<?php }?>
+<?php if (!$_smarty_tpl->tpl_vars['products']->value->num_rows>0) {?>
+	<h4 class="err">Brak produktów do wyświetlenia</h4> 
+<?php }?>
+</div>
 
 
     </div>

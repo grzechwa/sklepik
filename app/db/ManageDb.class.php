@@ -21,7 +21,7 @@ class manageDb {
     //return boolean
     public function connect () {
         // Create connection
-        $this->conn = new mysqli('localhost:3306', 'root', '', 'projekt_sklep');
+        $this->conn = new mysqli('localhost', 'root', '', 'projekt_sklep');
         // Check connection
         if ($this->conn->connect_error) {
             die("Connection failed: " . $this->conn->connect_error);

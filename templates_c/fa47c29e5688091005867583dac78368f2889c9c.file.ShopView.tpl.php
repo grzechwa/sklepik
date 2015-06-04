@@ -1,28 +1,26 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2015-06-04 21:05:02
-         compiled from "C:\xampp\htdocs\sklepik\app\shop\ShopView.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:27934555b76147e7b99-42190316%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.17, created on 2015-06-05 00:58:35
+         compiled from "/home/greg/www_pv/sklepik/app/shop/ShopView.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:239597895570d81b5ea2a9-59792594%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'dc1ff588aa9c4413a4dc8f86d70fc179940dd4ae' => 
+    'fa47c29e5688091005867583dac78368f2889c9c' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\sklepik\\app\\shop\\ShopView.tpl',
+      0 => '/home/greg/www_pv/sklepik/app/shop/ShopView.tpl',
       1 => 1433444692,
       2 => 'file',
     ),
-    '6b6c826dffe74d999e542a1a55d0781143d8ec7d' => 
+    'a595b79be1e3062bf54653a5e3a2ee5094d9a1e5' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\sklepik\\templates\\main.tpl',
+      0 => '/home/greg/www_pv/sklepik/templates/main.tpl',
       1 => 1433444677,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '27934555b76147e7b99-42190316',
+  'nocache_hash' => '239597895570d81b5ea2a9-59792594',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_555b761491c565_48116575',
   'variables' => 
   array (
     'conf' => 0,
@@ -32,8 +30,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'isLogged' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_5570d81b698bf0_68872010',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_555b761491c565_48116575')) {function content_555b761491c565_48116575($_smarty_tpl) {?><!doctype html>
+<?php if ($_valid && !is_callable('content_5570d81b698bf0_68872010')) {function content_5570d81b698bf0_68872010($_smarty_tpl) {?><!doctype html>
 <html lang="pl">
 <head>
     <meta charset="utf-8">

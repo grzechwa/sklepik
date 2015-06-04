@@ -1,28 +1,26 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2015-06-04 21:05:51
-         compiled from "C:\xampp\htdocs\sklepik\app\security\LoginView.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:149555568b636c301d7-64214257%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.17, created on 2015-06-05 00:58:36
+         compiled from "/home/greg/www_pv/sklepik/app/security/RegisterView.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:20978792695570d81c70b088-75629534%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '6f4c633bbdfef0f7db63b0d80222b040f0b9c11f' => 
+    '4092c236a340c217a5067a3c2334f9fb203f073a' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\sklepik\\app\\security\\LoginView.tpl',
-      1 => 1433369629,
+      0 => '/home/greg/www_pv/sklepik/app/security/RegisterView.tpl',
+      1 => 1433403704,
       2 => 'file',
     ),
-    '6b6c826dffe74d999e542a1a55d0781143d8ec7d' => 
+    'a595b79be1e3062bf54653a5e3a2ee5094d9a1e5' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\sklepik\\templates\\main.tpl',
+      0 => '/home/greg/www_pv/sklepik/templates/main.tpl',
       1 => 1433444677,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '149555568b636c301d7-64214257',
+  'nocache_hash' => '20978792695570d81c70b088-75629534',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_5568b636d31f17_38060421',
   'variables' => 
   array (
     'conf' => 0,
@@ -32,8 +30,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'isLogged' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_5570d81c7b1587_74832125',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5568b636d31f17_38060421')) {function content_5568b636d31f17_38060421($_smarty_tpl) {?><!doctype html>
+<?php if ($_valid && !is_callable('content_5570d81c7b1587_74832125')) {function content_5570d81c7b1587_74832125($_smarty_tpl) {?><!doctype html>
 <html lang="pl">
 <head>
     <meta charset="utf-8">
@@ -139,7 +139,7 @@ doLogout">Wyloguj</a></li>
     <div id="app_content" class="content">
 
 
-    <h2 class="content-head is-center">Zaloguj się</h2>
+    <h2 class="content-head is-center">Zarejestruj się</h2>
     <div class="l-box-lrg pure-u-1 pure-u-med-3-5">
 
     
@@ -183,16 +183,44 @@ $_smarty_tpl->tpl_vars['inf']->_loop = true;
     <tbody>
         <tr>
             <td width="40%" valign="top">
-                <form class="pure-form pure-form-stacked" action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-doLogin" method="post">
+                <form class="pure-form pure-form-stacked"  action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
+doRegister" method="post">
                     <fieldset>
                         <label for="login">login</label>
-                        <input id="login" type="text" placeholder="Wprowadź login" name="login" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->login;?>
-">
+                        <input id="login" type="text" placeholder="Wybierz sobie login" name="login" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->login;?>
+" required>
                         <label for="password">hasło</label>
-                        <input id="password" type="password" placeholder="Wprowadź hasło" name="password" >
+                        <input id="password" type="password" placeholder="Wprowadź hasło" name="password" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->password;?>
+" required>
+                        <label for="name">imię</label>
+                        <input id="name" type="text" placeholder="Podaj imię" name="name" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->name;?>
+" >
+                        <label for="surname">nazwisko</label>
+                        <input id="surname" type="text" placeholder="Podaj nazwisko" name="surname" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->surname;?>
+" required>
+                        <label for="postcode">kod pocztowy</label>
+                        <input id="postcode" type="text" placeholder="Podaj kod pocztowy w formacie: XX-XXX" name="postcode" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->postcode;?>
+" required>
+                        <label for="city">miejscowość</label>
+                        <input id="city" type="text" placeholder="Podaj miejscowość zamieszkania" name="city" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->city;?>
+" required>
+                        <label for="street">ulica</label>
+                        <input id="street" type="text" placeholder="Podaj ulicę zamieszkania" name="street" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->street;?>
+" required>
+                        <label for="streetNo">nr domu</label>
+                        <input id="streetNo" type="text" placeholder="Podaj nr domu" name="streetNo" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->streetNo;?>
+" required>
+                        <label for="appartmentNo">nr mieszkania</label>
+                        <input id="appartmentNo" type="text" placeholder="Podaj nr mieszkania" name="appartmentNo" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->appartmentNo;?>
+" required>
+                        <label for="email">e-mail</label>
+                        <input id="email" type="email" placeholder="Podaj adres e-mail" name="email" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->email;?>
+" required>
+                        <label for="birthdate">data urodzenia</label>
+                        <input id="birthdate" type="text" placeholder="Podaj datę w formacie RRRR-MM-DD" name="birthdate" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->birthdate;?>
+" requierd>
                     </fieldset>
-                    <button type="submit" class="pure-button">Loguj</button>
+                    <button type="submit" class="pure-button">Rejestruj</button>
                 </form>
             </td>
         </tr>
