@@ -47,4 +47,9 @@ switch ($action) {
 		$ctrl = new ShopCtrl ();
                 $ctrl->process();
 	break;
+	case 'zamow' :
+		include_once $conf->root_path.'/app/order/OrderShopCtrl.class.php';
+		$ctrl = new OrderShopCtrl ();
+                $ctrl->process();
+	break;
 }

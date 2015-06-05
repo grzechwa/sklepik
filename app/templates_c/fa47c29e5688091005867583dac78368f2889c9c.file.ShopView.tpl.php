@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2015-06-05 01:00:24
+<?php /* Smarty version Smarty-3.1.17, created on 2015-06-05 09:16:03
          compiled from "/home/greg/www_pv/sklepik/app/shop/ShopView.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:954035525570d88815e863-55343442%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fa47c29e5688091005867583dac78368f2889c9c' => 
     array (
       0 => '/home/greg/www_pv/sklepik/app/shop/ShopView.tpl',
-      1 => 1433444692,
+      1 => 1433488530,
       2 => 'file',
     ),
     'a595b79be1e3062bf54653a5e3a2ee5094d9a1e5' => 
@@ -21,6 +21,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_5570d88821b2e3_44288148',
   'variables' => 
   array (
     'conf' => 0,
@@ -30,8 +32,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'isLogged' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_5570d88821b2e3_44288148',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5570d88821b2e3_44288148')) {function content_5570d88821b2e3_44288148($_smarty_tpl) {?><!doctype html>
 <html lang="pl">
@@ -173,7 +173,11 @@ $_smarty_tpl->tpl_vars['cat']->_loop = true;
 
 </table>
 <div>
-    
+ <?php if ($_smarty_tpl->tpl_vars['isLogged']->value) {?>
+     <h3> 
+	 Hello from isLogged
+     </h3>
+     <?php }?>
 <?php if ($_smarty_tpl->tpl_vars['products']->value->num_rows>0) {?>
 <table class="pure-table pure-table-horizontal" align="center">
         <thead>
